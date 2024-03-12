@@ -3,19 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>nav-bar-java-script</title>
+    <title>onclick</title>
 </head>
 <body>
     
 
     <div id="name-div"></div>
-    <div id="function-value-show"></div>
+
+    <button onclick="myfunction()"> click me </button>
+    <div id="demo"></div>
 
 
     <script>
         let name = "MD. Sakib Ahammad";
         let nameone = document.getElementById("name-div");
         nameone.innerHTML = name;
+
+        function myfunction() {
+            document.getElementById("demo").innerHTML="My name is Sakib";
+        }
     </script>
 </body>
 </html>
